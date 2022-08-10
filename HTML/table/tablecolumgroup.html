@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table, th, td{
+            border: 2px dotted cadetblue;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 5px;
+        }
+        .col_grp{
+            background-color: aquamarine;
+        }
+        .hidden{
+            visibility: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="4" class="col_grp">
+            <col span="3" class="hidden">
+        </colgroup>
+        <tr>
+            <th>Headings</th>
+            <th>Column Heading 1</th>
+            <th>Column Heading 2</th>
+            <th>Column Heading 3</th>
+        </tr>
+        <tr>
+            <th>Row Heading 1</th>
+            <td>Row-1 Data-1</td>
+            <td>Row-1 Data-2</td>
+            <td>Row-1 Data-3</td>
+        </tr>
+        <tr>
+            <th>Row Heading 2</th>
+            <td>Row-2 Data-1</td>
+            <td>Row-2 Data-2</td>
+            <td>Row-2 Data-3</td>
+        </tr>
+        <tr>
+            <th>Row Heading 3</th>
+            <td>Row-3 Data-1</td>
+            <td>Row-3 Data-2</td>
+            <td>Row-3 Data-3</td>
+        </tr>
+        <tr>
+            <th>Row Heading 4</th>
+            <td>Row-4 Data-1</td>
+            <td>Row-4 Data-2</td>
+            <td>Row-4 Data-3</td>
+        </tr>
+    
+</body>
+</html>

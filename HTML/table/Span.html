@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: 1px inset teal;
+            /* border-collapse: collapse; */
+        }
+        th, td{
+            text-align: center;
+            padding: 5px;
+        }
+        th{
+            text-decoration: underline;
+            color: mediumorchid;
+            background-color: rgba(190, 0, 50, 0.1);
+        }
+        .full_size{
+            width: 100%;
+            border-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table class="full_size">
+        <tr>
+            <th>Details</th>
+            <th colspan="2">Name</th>
+            <!-- <th>Name1</th>
+            <th>Name2</th> -->
+            <th>Technology</th>
+            <th class="big_col">Email</th>
+        </tr>
+        <tr>
+            <!-- <th>Person</th> -->
+            <th rowspan="2">Person</th>
+            <td>Madhav</td>
+            <td>Patel</td>
+            <td>JAVA</td>
+            <td>abc123@gmail.com</td>
+        </tr>
+        <tr>
+            <!-- <th>Person 2</th> -->
+            <td>Ram</td>
+            <td>Vyas</td>
+            <td>MERN Full Stack</td>
+            <td>ram1675@yahoo.com</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

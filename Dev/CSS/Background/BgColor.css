@@ -1,0 +1,12 @@
+*{
+    background-color: hsla(105, 90%, 80%, 0.5);
+}
+div{
+    background-color: rgba(23, 110, 170, 0.6);
+}
+p{
+    background-color: #8f2a12;
+}
+span{
+    background-color: darkgoldenrod;
+}

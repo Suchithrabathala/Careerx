@@ -1,0 +1,6 @@
+*::selection{
+    color: forestgreen;
+    background-color: yellow;
+    /* text-decoration-line: underline;
+    text-decoration-color: crimson; */
+}

@@ -1,0 +1,18 @@
+*{
+    background-color: bisque;
+    font-weight: bold;
+}
+div{
+    margin: 10px;
+    padding: 10px;
+}
+h1{
+    color: aqua;
+
+}
+h2{
+    color: azure;
+}
+h3{
+    color: blue;
+}

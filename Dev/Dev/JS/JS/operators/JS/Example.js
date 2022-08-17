@@ -1,0 +1,7 @@
+document.write("Hello world")
+alert("I am alert")
+console.log("this is console")
+alert("After console")
+document.write("<p> after all outputs</p>")
+alert("AFTER DOM")
+console.log("hELLO")

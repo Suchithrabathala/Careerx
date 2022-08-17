@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if,else if,else</title>
+    <style>
+        .equal{
+            background-color: aquamarine;
+            background-position-x: center;
+            color: blue;
+            font-size: medium;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 30px;
+
+        }
+        .elseequal{
+            background-color: aquamarine;
+            background-position: center;
+            color: coral;
+            font-size: medium;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 3px;
+        }
+        .unequal{
+            background-color:aquamarine;
+            background-size: 100%;
+            color: red;
+            font-size: large;
+            padding-bottom: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var a="Suchi"
+        var b="suchi"
+        let a1=false;
+        let b1=true;
+        if(a==b)
+        {
+            document.write("<h2 class=equal> a is equal to b</h2>")
+        }
+        else if(a1==b1){
+            document.write("<h2 class=elseequal> a1 is equal to b1</h2>")
+        }
+        else
+        {
+            document.write("<p class=unequal>"+a+" is not equal to "+b+"</p>")
+        }
+
+    </script>
+</body>
+</html>

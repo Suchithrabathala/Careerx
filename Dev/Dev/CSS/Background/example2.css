@@ -1,0 +1,19 @@
+*{
+    background-image: url(http://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images.jpg);
+    background-position: center;
+    
+}
+div{
+    margin: 1px;
+    padding: 10px;
+}
+h1{
+    color: aqua;
+
+}
+h2{
+    color: azure;
+}
+h3{
+    color: blue;
+}

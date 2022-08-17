@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions of array</title>
+    <style>
+        .p{
+            background-color: aquamarine;
+            color: brown;
+            text-align: center;
+            text-decoration-color: blanchedalmond;
+            text-decoration-line: underline;
+            
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a=[]
+        a=[1,2,3,4,5,6,7,8]
+        let i=prompt("enter the index value to see the value");
+        document.write(`<p class=p>index ${i} value in ${a[i]}</p>`);
+        console.log(a.pop())
+        console.log("Array"+a)
+        console.log(a.push(9))
+        console.log("Array"+a)
+        console.log(a.shift())
+        console.log("Array"+a)
+        console.log(a.unshift(4))
+        console.log("Array"+a)
+
+
+    </script>
+    
+</body>
+</html>

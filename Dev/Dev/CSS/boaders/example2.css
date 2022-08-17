@@ -1,0 +1,13 @@
+*{
+    margin:auto;
+    padding: auto;
+}
+div{
+    border: 10px red dotted;
+    
+}
+body{
+    background-color: bisque;
+    border: 10cm rgb(248, 225, 225) groove;
+
+}

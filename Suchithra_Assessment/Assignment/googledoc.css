@@ -1,0 +1,13 @@
+
+.block {
+    background-image: url(https://lh6.googleusercontent.com/J9lutxGcjNAyxCvjo0CXFXx-1H4X1Qvvm3bH2taEzSdFfqUzznwXbzL53tHG7adPeEVBOKVD63YQLOXAUkhp5_Y8uMpnkbsecgqqJ-MkEdPmeJN229dU0lSEpgVOlnCX2A=w1200);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 50px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	
+}

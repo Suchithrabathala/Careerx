@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Registaration Form</title>
+        <link rel="stylesheet" href="real.css">
+       
+    </head>
+       
+    <body>
+        <h1> Registaration Form</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">User ID</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Required and must be length of 5 to 12">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="col-90">
+                    <input type="password" id="password" name="password" maxlength="12" placeholder="Required and must be length of 7 to 12">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">Name</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Required and alphabets only">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <input name="address" id="address" type="text" placeholder="optional"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="Country" required >Country</label>
+                </div>
+                <div class="col-90">
+                    <select name="Country" id="Country">
+                        <option value=" ">Select Country</option>
+                        <option value="0">India</option>
+                        <option value="1">Japan</option>
+                        
+                    </select>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode">ZIP CODE</label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" name="pin" maxlength="6" placeholder="Required must be numeric">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="Required must be valid gmail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male 
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="specialization">Language</label>
+                </div>
+                <div class="col-90">
+                    <input type="checkbox" class="specialization" id="english" name="specialization[]" value="English">English
+                    <input type="checkbox" class="specialization" id="non english" name="specialization[]" value="NON-English">Non-English<br/>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="phone">Phonenumber</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" class="telephonenumber" id="phone" pattern="^[0]\d{3}-\d{6}$">
+
+                </div>
+            </div>    
+            
+            <div class="row">
+                <div class="col-10">
+                    <label for="about">About:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="about" id="about" cols="30" rows="10" placeholder="optional"></textarea>
+                </div>
+            </div> 
+              
+            
+            <div class="row">
+                <div class="col-90">
+                    <input type="submit" value="Submit" onclick="SaveStudentDetails()">
+                </div>
+            </div>  
+        </div>  
+    </body>
+</html>

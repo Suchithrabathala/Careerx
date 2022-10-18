@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter card number<input type="text" id="cardnum">
+    Enter Cvv<input type="text" id="cvv">
+    Enter expriy date<input type="text" id="expirydate">
+    <button type="submit" id="button">Submit</button>
+    <script>
+        var f=document.getElementById("button").click()
+        var a=document.getElementById("cardnum")
+        var b=document.getElementById("cvv");
+        var c=document.getElementById("expirydate");
+        if(f){
+            alert("card number "+a);
+            alert("cvv is"+b);
+            alert("expiry date"+c);
+        }
+    </script>
+</body>
+</html>

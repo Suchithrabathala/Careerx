@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="Form-container">
+          <form id="form">
+            <label for="customerName" class="input-title">CUSTOMER NAME</label><br>
+            <input type="text" class="record-input" id="customerName" required><br>
+      
+            <label for="itemPurchased" class="input-title">ITEM PURCHASED</label><br>
+            <input type="text" class="record-input" id="itemPurchased" required><br>
+      
+            <label for="quantity" class="input-title">QUANTITY</label><br>
+            <input type="text" class="record-input" id="quantity" required><br>
+      
+            <label for="date" class="input-title">Date</label><br>
+            <input type="date" class="record-input" id="DATE" required><br>
+      
+            <input type="submit" value="Submit" class="record-submit">
+      
+          </form>
+      
+        </div>
+    
+        <div class="record-container" id="container">
+          <table id="table">
+            <tr>
+              <th>CUSTOMER NAME</th>
+              <th>ITEM PURCHASED</th>
+              <th>QUANTITY</th>
+              <th>DATE</th>
+            </tr>
+      
+            <tr>
+              <td>Vamsi</td>
+              <td>iPhone 11 pro max</td>
+              <td>1</td>
+              <td>07/01/2021</td>
+              <td id="deleteTable" onclick="removeElement(this)"><button>x</button></td>
+            </tr>
+          </table>
+      
+      
+        </div>
+      
+      
+    </div>
+
+<script>
+        var form = document.getElementById("form");
+        var table = document.getElementById("table");
+        form.addEventListener("submit", addItem);
+        function addItem(e) {
+            e.preventDefault();
+            var customerName = document.getElementById("customerName").value;
+            var itemPurchased = document.getElementById("itemPurchased").value;
+            var quantity = document.getElementById("quantity").value;
+            var date = document.getElementById("DATE").value;
+            var row = table.insertRow(2);
+            var customerCell = row.insertCell(0);
+            customerCell.innerHTML = customerName;
+        
+            var ItemCell = row.insertCell(1);
+            ItemCell.innerHTML = itemPurchased;
+        
+            var quantityCell = row.insertCell(2);
+            quantityCell.innerHTML = quantity;
+        
+            var dateCell = row.insertCell(3);
+            dateCell.innerHTML = date;
+        
+            var DeleteCell = row.insertCell(4);
+            DeleteCell.innerHTML = "<button onclick='removeElement(this)'>x</button>";
+        
+        }
+        function removeElement(o){
+            var row=o.parentNode.parentNode;
+            var table=row.parentNode;
+            table.removeChild(row);
+            
+        }
+    </script>    
+</body>
+</html>
